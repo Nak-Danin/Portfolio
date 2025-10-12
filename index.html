@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <main
+      class="relative w-full flex flex-col items-center gap-5 bg-gray-700 text-white text-[18px] lg:text-[20px]"
+    >
+      <!--Navigation-->
+      <nav
+        class="flex justify-center w-full bg-gray-800 border-b border-t border-black sticky top-0 z-10"
+      >
+        <ul
+          class="flex justify-center gap-[30px] md:gap-[80px] w-[50%] p-[20px]"
+        >
+          <a href="#home"><li class="hover:cursor-pointer">Profile</li></a>
+          <a href="#about"><li class="hover:cursor-pointer">About</li></a>
+          <a href="#skill"><li class="hover:cursor-pointer">Skill</li></a>
+          <a href="#projects"
+            ><li class="hover:cursor-pointer">Experiences</li></a
+          >
+          <a href="#contact"><li class="hover:cursor-pointer">Contact</li></a>
+        </ul>
+      </nav>
+
+      <!--Profile-->
+      <section
+        id="home"
+        class="flex justify-start gap-[20px] w-full ps-[5%] lg:ps-[10%] pt-[50px] scroll-mt-16"
+      >
+        <aside
+          data-aos="fade-right"
+          style="background: url(./assets/pfp.jpg) center top/cover"
+          class="rounded-full w-[130px] h-[130px] lg:w-[250px] lg:h-[250px] border-2 border-white"
+        ></aside>
+        <aside class="info flex flex-col justify-center gap-3">
+          <h1 data-aos="fade-down" class="lg:text-[25px]">
+            Hello! I'm <span class="text-yellow-300">Nak Danin</span>
+          </h1>
+          <h2
+            data-aos="fade-left"
+            class="text-[20px] lg:text-[40px] font-semibold"
+          >
+            Front-end Web Developer
+          </h2>
+        </aside>
+      </section>
+      <div data-aos="fade-up" class="w-full pb-[50px] ps-[5%]">
+        <h1 class="text-[25px] lg:text-[35px]">Major in Computer Science.</h1>
+        <span class="text-[16px] pe-[10px]"
+          >Curently, I'm a third year student at Royal University of Phnom Penh
+          ( RUPP )</span
+        >
+      </div>
+
+      <!-- About -->
+      <section
+        id="about"
+        class="w-full bg-gray-800/80 flex justify-center py-[50px] scroll-mt-16"
+      >
+        <aside class="w-[95%] lg:w-[60%] flex flex-col items-center gap-5">
+          <h1
+            class="text-[25px] lg:text-[30px] font-bold underline underline-offset-8 decoration-white text-center"
+          >
+            About Me
+          </h1>
+          <span
+            data-aos="zoom-in"
+            class="w-full border-2 px-4 py-4 text-white rounded"
+          >
+            I am a passionate learner and aspiring developer with a growing
+            focus on front-end development. My coding journey started with small
+            challenges in C++, Java and Python. Throught perserverance I've
+            built personal and team projects using ReactJS, TailwindsCSS and
+            Javascript. I enjoy solving problems, improving both user interface
+            and experiences, and bringing cool ideas to life through technology.
+            Currently, I'm expanding my skills in back-end development to become
+            a full-stack developer ready to tackle real-world challenges.
+          </span>
+        </aside>
+      </section>
+
+      <!--Skills-->
+      <section
+        id="skill"
+        class="w-full flex flex-col gap-[30px] w-full items-center py-[40px] scroll-mt-16"
+      >
+        <h1
+          class="text-[30px] font-bold underline underline-offset-8 decoration-white"
+        >
+          Skill and Technology
+        </h1>
+        <div class="w-[90%] lg:w-[80%] grid grid-cols-3 lg:grid-cols-6 gap-3">
+          <!--HTML-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-amber-600 h-[150px] lg:h-[200px]"
+          >
+            <img class="w-[50px] h-[50px]" src="./assets/html.png" alt="html" />
+            <h1>HTML</h1>
+          </div>
+          <!--CSS-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-blue-500 h-[150px] lg:h-[200px]"
+          >
+            <img class="w-[50px] h-[50px]" src="./assets/css.png" alt="html" />
+            <h1>CSS</h1>
+          </div>
+          <!--Javascript-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-yellow-500 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/javascript.png"
+              alt="html"
+            />
+            <h1>Javascript</h1>
+          </div>
+          <!--Bootstrap-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-violet-800 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/bootstrap.png"
+              alt="html"
+            />
+            <h1>Bootstrap</h1>
+          </div>
+          <!--Tailwind-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border border-white rounded-md bg-purple-500 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/tailwind.png"
+              alt="html"
+            />
+            <h1>TailwindCSS</h1>
+          </div>
+          <!--ReactJS-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-sky-600 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/reactjs.png"
+              alt="html"
+            />
+            <h1>ReactJS</h1>
+          </div>
+          <!--PHP-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-gray-500 h-[150px] lg:h-[200px]"
+          >
+            <img class="w-[50px] h-[50px]" src="./assets/php.png" alt="html" />
+            <h1>php + crud</h1>
+          </div>
+          <!--Java-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-white text-black h-[150px] lg:h-[200px]"
+          >
+            <img class="w-[50px] h-[50px]" src="./assets/java.png" alt="html" />
+            <h1>Java</h1>
+          </div>
+          <!--C++-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-sky-400 h-[150px] lg:h-[200px]"
+          >
+            <img class="w-[50px] h-[50px]" src="./assets/c++.png" alt="html" />
+            <h1>C++</h1>
+          </div>
+          <!--Python-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-yellow-600 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/python.png"
+              alt="html"
+            />
+            <h1>python</h1>
+          </div>
+          <!--Version Control-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-red-600 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[80px] lg:w-[100px] lg:h-[80px]"
+              src="./assets/git.png"
+              alt="html"
+            />
+            <h1 class="text-center px-3">Version Control</h1>
+          </div>
+          <!--Mysql-->
+          <div
+            data-aos="fade-up"
+            class="flex flex-col justify-center items-center gap-3 border rounded-md bg-emerald-500 h-[150px] lg:h-[200px]"
+          >
+            <img
+              class="w-[50px] h-[50px]"
+              src="./assets/mysql.png"
+              alt="html"
+            />
+            <h1>Database</h1>
+          </div>
+        </div>
+      </section>
+
+      <!--Projects-->
+      <section
+        id="projects"
+        class="bg-gray-800/80 w-full py-[50px] flex flex-col items-center gap-[40px] scroll-mt-16"
+      >
+        <h1
+          class="text-[30px] font-bold underline underline-offset-8 decoration-white"
+        >
+          Experiences
+        </h1>
+        <main
+          class="grid grid-cols-1 md:grid-cols-2 w-[95%] lg:w-[80%] gap-[50px]"
+        >
+          <!--ShoeShop-->
+          <aside
+            data-aos="fade-right"
+            class="border-2 border-gray-400 rounded-xl flex flex-col bg-black/30 w-full"
+          >
+            <div
+              class="swiper mySwiper h-[240px] lg:h-[300px] w-[100%] border-b-2 border-gray-400"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/shoeshop/p1.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/shoeshop/p2.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/shoeshop/p3.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/shoeshop/p4.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/shoeshop/p5.png"
+                    alt="shoe1"
+                  />
+                </div>
+              </div>
+              <!-- Optional pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <section
+              class="text-black w-full flex flex-col gap-3 lg:gap-5 items-center py-[20px]"
+            >
+              <h1 class="text-center text-[25px] font-medium text-white">
+                Shoe Shop 👟
+              </h1>
+              <table class="w-[90%] text-white">
+                <tr>
+                  <td valign="top">👟</td>
+                  <td>Product catalog with images and descriptions</td>
+                </tr>
+                <tr>
+                  <td valign="top">🛒</td>
+                  <td>Cart and wishlist are intergrated with Local storage</td>
+                </tr>
+                <tr>
+                  <td valign="top">🔍</td>
+                  <td>filter products based on category</td>
+                </tr>
+                <tr>
+                  <td valign="top">📱</td>
+                  <td>Mobile-friendly responsive layout</td>
+                </tr>
+                <tr>
+                  <td valign="top">🎨</td>
+                  <td>Modern UI with TailwindCSS & FontAwesome icons</td>
+                </tr>
+              </table>
+              <p align="center">
+                <a
+                  href="https://online-shoes-shop-virid.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel"
+                    alt="Live Demo"
+                  />
+                </a>
+              </p>
+            </section>
+          </aside>
+          <!--PteasDecor-->
+          <aside
+            data-aos="fade-left"
+            class="border-2 border-gray-400 rounded-xl flex flex-col bg-black/30 w-full"
+          >
+            <div
+              class="swiper mySwiper h-[240px] lg:h-[300px] w-[100%] border-b-2 border-gray-400"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/pteasdecor/p1.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/pteasdecor/p2.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/pteasdecor/p3.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/pteasdecor/p4.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/pteasdecor/p5.png"
+                    alt="shoe1"
+                  />
+                </div>
+              </div>
+              <!-- Optional pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <section
+              class="text-black w-full flex flex-col items-center py-[20px]"
+            >
+              <h1 class="text-center text-[25px] font-medium text-white">
+                PteasDecor 🏠
+              </h1>
+              <p class="text-white w-[90%] pt-4">
+                A modern ReactJS home decoration products e-commerce website,
+                offering stylish and functional décor for every home. Built with
+                a responsive design, intuitive navigation, and a seamless
+                shopping experience to help customers find the perfect pieces
+                for their living spaces.
+                <br />
+                <br />
+              </p>
+              <p align="center">
+                <a href="https://pteasdecor.netlify.app/" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel"
+                    alt="Live Demo"
+                  />
+                </a>
+              </p>
+            </section>
+          </aside>
+          <!--Starbuck-->
+          <aside
+            data-aos="fade-right"
+            class="border-2 border-gray-400 rounded-xl flex flex-col bg-black/30 w-full"
+          >
+            <div
+              class="swiper mySwiper h-[240px] lg:h-[300px] w-[100%] border-b-2 border-gray-400"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/coffee/p1.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/coffee/p2.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/coffee/p3.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/coffee/p4.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/coffee/p5.png"
+                    alt="shoe1"
+                  />
+                </div>
+              </div>
+              <!-- Optional pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <section
+              class="text-black w-full flex flex-col items-center py-[20px]"
+            >
+              <h1 class="text-center text-[25px] font-medium text-white">
+                Starbucks Clone ☕
+              </h1>
+              <p class="text-white w-[90%] pt-4">
+                A front-end clone of Starbucks website built with ReactJS and
+                TailwindCSS. This project showcases modern UI, routing, and
+                dynamic product pages that display a list of items such as
+                foods, drinks, and more.
+                <br />
+                <br />
+              </p>
+              <p align="center">
+                <a
+                  href="https://coffee-shop-kappa-brown.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel"
+                    alt="Live Demo"
+                  />
+                </a>
+              </p>
+            </section>
+          </aside>
+          <!--Porsche-->
+          <aside
+            data-aos="fade-left"
+            class="border-2 border-gray-400 rounded-xl flex flex-col bg-black/30 w-full"
+          >
+            <div
+              class="swiper mySwiper h-[240px] lg:h-[300px] w-[100%] border-b-2 border-gray-400"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/porsche/p1.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/porsche/p2.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/porsche/p3.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/porsche/p4.png"
+                    alt="shoe1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="rounded-t-xl"
+                    src="./assets/porsche/p5.png"
+                    alt="shoe1"
+                  />
+                </div>
+              </div>
+              <!-- Optional pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <section
+              class="text-black w-full flex flex-col items-center py-[20px]"
+            >
+              <h1 class="text-center text-[25px] font-medium text-white">
+                Porsche Home Page 🚗
+              </h1>
+              <p class="text-white w-[90%] pt-4">
+                This project is a clone of the official Porsche website,
+                designed to showcase the luxurious feel of the brand. You can
+                explore different car models, view detailed specs, and check out
+                stunning images just like on the real site.
+                <br />
+                <br />
+              </p>
+              <p align="center">
+                <a href="https://porsche-shop.vercel.app/" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=vercel"
+                    alt="Live Demo"
+                  />
+                </a>
+              </p>
+            </section>
+          </aside>
+        </main>
+      </section>
+      <section
+        id="contact"
+        class="w-full py-[50px] flex flex-col items-center gap-[40px] scroll-mt-16"
+      >
+        <h1
+          class="text-[30px] font-bold underline underline-offset-8 decoration-white"
+        >
+          Contact Me
+        </h1>
+        <ul class="flex flex-col gap-4 text-white w-[90%] lg:w-[50%]">
+          <li data-aos="fade-right"
+            class="bg-black/30 border-2 rounded-xl px-4 py-3 hover:cursor-pointer"
+          >
+            Phone Number : 085-201-548 / 081-505-193
+          </li>
+          <a href="https://t.me/nakdanin" target="_blank">
+            <li
+            data-aos="fade-left"
+              class="bg-black/30 border-2 rounded-xl px-4 py-3 hover:cursor-pointer"
+            >
+              Telegram : 081-505-193 ( @nakdanin )
+            </li>
+          </a>
+          <a href="mailto:nakdanin9@gmail.com">
+            <li
+            data-aos="fade-right"
+              class="bg-black/30 border-2 rounded-xl px-4 py-3 hover:cursor-pointer"
+            >
+              Email : nakdanin9@gmail.com
+            </li>
+          </a>
+          <a href="https://github.com/Nak-Danin" target="_blank"
+            ><li
+            data-aos="fade-left"
+              class="bg-black/30 border-2 rounded-xl px-4 py-3 hover:cursor-pointer"
+            >
+              Github : github.com/Nak-Danin
+            </li></a
+          >
+        </ul>
+      </section>
+    </main>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true, // infinite loop
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // make bullets clickable
+        },
+        autoplay: {
+          delay: 3000, // 3 seconds between slides
+          disableOnInteraction: false, // keep autoplay even after user interacts
+        },
+        slidesPerView: 1, // number of slides visible
+        spaceBetween: 20, // space between slides in px
+      });
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          once: false,
+          offset: 100,
+          mirror: true,
+        });
+      });
+    </script>
+  </body>
+</html>
